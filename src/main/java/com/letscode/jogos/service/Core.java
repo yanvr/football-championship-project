@@ -12,7 +12,7 @@ public class Core {
 
     public void run() {
 
-        File file = new File("C:\\Users\\yanvr\\Desktop\\java-projects\\projeto-jogos\\src\\main\\java\\com\\letscode\\jogos\\files\\teste.csv");
+        File file = new File("F:\\Programacao\\LetsCode\\Webfullstack\\Projetos\\SortProject\\football-championship-project\\src\\main\\java\\com\\letscode\\jogos\\files\\teste.csv");
 
         Set<Game> games = FileHandler.read(file);
 

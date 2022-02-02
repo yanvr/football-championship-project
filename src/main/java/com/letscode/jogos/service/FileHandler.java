@@ -43,7 +43,7 @@ public class FileHandler {
 
         for (Map.Entry<String, List<Game>> games : gamesByTeam.entrySet()) {
 
-            String pathName = "C:\\Users\\yanvr\\Desktop\\java-projects\\projeto-jogos\\src\\main\\java\\com\\letscode\\jogos\\files\\"
+            String pathName = "F:\\Programacao\\LetsCode\\Webfullstack\\Projetos\\SortProject\\football-championship-project\\src\\main\\java\\com\\letscode\\jogos\\files"
                     + games.getKey().replace(" ", "-") + ".txt";
 
             File file = new File(pathName);
@@ -79,8 +79,7 @@ public class FileHandler {
         teams.sort(Comparator.comparing(Team::getScore, Comparator.reverseOrder()).thenComparing(Team::getWins));
         teams.forEach(System.out::println);
 
-        File file = new File("C:\\Users\\yanvr\\Desktop\\java-projects\\projeto-jogos\\src\\main\\java\\com\\letscode\\jogos\\files\\"
-                + "league-table.csv");
+        File file = new File("F:\\Programacao\\LetsCode\\Webfullstack\\Projetos\\SortProject\\football-championship-project\\src\\main\\java\\com\\letscode\\jogos\\files\\league-table.csv");
 
         if (!file.exists()) {
             try {
