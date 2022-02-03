@@ -7,7 +7,11 @@ import java.time.format.DateTimeFormatter;
 public class DateTimeFormatter2 {
 
     public static String forString(Game game) {
-        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/yy, HH:mm");
-        return dateTimeFormatter.format(game.getGameDateTime()).replace(":", "h");
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/yy");
+        return dateTimeFormatter.format(game.getGameDate());
+    }
+
+    public static DateTimeFormatter toString(String date) {
+        return DateTimeFormatter.ofPattern("dd/MM/yy");
     }
 }
