@@ -10,15 +10,21 @@ import java.util.stream.Collectors;
 
 public class Core {
 
-    public void run() {
+    public static void run() {
 
-        File file = new File("C:\\Users\\yanvr\\Desktop\\java-projects\\projeto-jogos\\src\\main\\java\\com\\letscode\\jogos\\files\\teste.csv");
+        String inputFile = "C:\\Users\\yanvr\\Desktop\\java-projects\\projeto-jogos\\src\\main\\java\\com\\letscode\\" +
+                "jogos\\files\\brasileirao2020.csv";
+
+        File file = new File(inputFile);
 
         Set<Game> games = FileHandler.read(file);
 
-        Map<String, List<Game>> gamesByTeam = games.stream()
-                .collect(Collectors.groupingBy(game -> game.getHome().getName()));
+        Map<String, List<Game>> teamByGames = games.stream()
+                .collect(Collectors.groupingBy(Game::getHomeTeam));
 
-        FileHandler.write(gamesByTeam);
+        FileHandler fileHandler = new FileHandler();
+//
+        fileHandler.writeTeamGames(teamByGames);
+
     }
 }

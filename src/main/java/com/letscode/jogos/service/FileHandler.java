@@ -1,14 +1,14 @@
 package com.letscode.jogos.service;
 
+import com.google.common.base.Splitter;
 import com.letscode.jogos.model.Game;
 import com.letscode.jogos.model.Team;
-import com.letscode.jogos.utils.DateTimeFormatter2;
-import com.letscode.jogos.utils.GameScoreChecker;
 
 import java.io.*;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.*;
+
+import static com.letscode.jogos.utils.DateTimeFormatter2.forString;
+import static com.letscode.jogos.utils.DateTimeFormatter2.ofString;
 
 public class FileHandler {
 
@@ -20,14 +20,18 @@ public class FileHandler {
 
             while (bufferedReader.ready()) {
                 String fileLine = bufferedReader.readLine();
-                String[] datas = fileLine.split(";");
+                List<String> datas = Splitter.on(";")
+                        .omitEmptyStrings()
+                        .trimResults()
+                        .splitToList(fileLine);
 
-                Game game = new Game();
-                game.setHome(new Team(datas[0]));
-                game.setVisitor(new Team(datas[1]));
-                game.setHomeGoals(Integer.parseInt(datas[2]));
-                game.setVisitorGoals(Integer.parseInt(datas[3]));
-                game.setGameDateTime(LocalDateTime.parse(datas[4], DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
+                Game game = Game.builder()
+                        .homeTeam(datas.get(0))
+                        .visitorTeam(datas.get(1))
+                        .homeGoals(Integer.parseInt(datas.get(2)))
+                        .visitorGoals(Integer.parseInt(datas.get(3)))
+                        .gameDate(ofString(datas.get(4)))
+                        .build();
 
                 games.add(game);
             }
@@ -37,69 +41,90 @@ public class FileHandler {
         return games;
     }
 
-    public static void write(Map<String, List<Game>> gamesByTeam) {
+    private File createFile(String fileName) {
+        String dirName = "C:\\Users\\yanvr\\Desktop\\java-projects\\projeto-jogos\\src\\main\\java\\com\\letscode\\jogos\\files\\";
+        File file = new File(dirName + fileName);
+
+        try {
+            if (file.createNewFile()) {
+                System.out.printf("The file %s was created with success!!!%n", fileName);
+                writeFileHeader(file);
+            } else {
+                System.out.printf("The file %s already created!!!%n", fileName);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return file;
+    }
+
+    public void writeTeamGames(Map<String, List<Game>> gamesByTeam) {
 
         List<Team> teams = new ArrayList<>();
 
-        for (Map.Entry<String, List<Game>> games : gamesByTeam.entrySet()) {
+        gamesByTeam.forEach((teamName, games) -> {
+            File file = createFile(teamName.replace(" ", "-") + ".txt");
 
-            String pathName = "C:\\Users\\yanvr\\Desktop\\java-projects\\projeto-jogos\\src\\main\\java\\com\\letscode\\jogos\\files\\"
-                    + games.getKey().replace(" ", "-") + ".txt";
+            Team team = new Team(teamName);
 
-            File file = new File(pathName);
+            games.forEach(game -> {
+                try (FileWriter fileWriter = new FileWriter(file, true);
+                     BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {
+                    bufferedWriter.write(forString(game.getGameDate()) + ":" + game.getHomeTeam()
+                            + " " + game.getHomeGoals() + " x " + game.getVisitorGoals() + " " + game.getVisitorTeam());
+                    bufferedWriter.newLine();
 
-            if (!file.exists()) {
-                try {
-                    file.createNewFile();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-
-            Team team = new Team(games.getKey());
-
-            for (Game game : games.getValue()) {
-                try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file, true))) {
-                    bufferedWriter.write(DateTimeFormatter2.forString(game)
-                            + ":" + game.getHome().getName() + " " + game.getHomeGoals()+ " x "
-                            + game.getVisitorGoals() + " " + game.getVisitor().getName() + "\n");
-
-                    GameScoreChecker.check(game, team);
+                    game.addHomeTeamScore(team);
 
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }
+            });
             teams.add(team);
-        }
+        });
         writeLeagueTable(teams);
     }
 
-    private static void writeLeagueTable(List<Team> teams) {
-        teams.sort(Comparator.comparing(Team::getScore, Comparator.reverseOrder()).thenComparing(Team::getWins));
-        teams.forEach(System.out::println);
+    private void writeLeagueTable(List<Team> teams) {
+        teams.sort(Comparator.comparing(Team::getScore, Comparator.reverseOrder())
+                .thenComparing(Team::getWins, Comparator.reverseOrder())
+                .thenComparing(Team::getDraws));
 
-        File file = new File("C:\\Users\\yanvr\\Desktop\\java-projects\\projeto-jogos\\src\\main\\java\\com\\letscode\\jogos\\files\\"
-                + "league-table.csv");
+        File file = createFile("league-table.csv");
 
-        if (!file.exists()) {
-            try {
-                file.createNewFile();
+        teams.forEach(team -> {
+            try (FileWriter fileWriter = new FileWriter(file, true);
+                 BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {
+
+                bufferedWriter.write(team.getName() + ";" + team.getWins() + ";" + team.getDraws() + ";"
+                        + team.getLoses() + ";" + team.getScore());
+                bufferedWriter.newLine();
+
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }
+        });
+    }
 
-        for (Team team : teams) {
-            try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file, true))) {
-                bufferedWriter.write(team.getName() + ";" + team.getWins() + ";" + team.getDraws() + ";"
-                + team.getLoses() + ";" + team.getScore());
+    private void writeFileHeader(File file) {
+        if (file.getName().endsWith(".txt")) {
+            String teamName = file.getName().replace(".txt", "").toUpperCase(Locale.ROOT);
+            try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file))
+            ) {
+                bufferedWriter.write("######### " + teamName + " ##########");
+                bufferedWriter.newLine();
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+            try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file))) {
+                bufferedWriter.write("Time;Vitorias;Empates;Derrotas;Pontos");
                 bufferedWriter.newLine();
 
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
-
     }
 }

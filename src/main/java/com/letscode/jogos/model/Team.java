@@ -1,11 +1,12 @@
 package com.letscode.jogos.model;
 
-import lombok.Data;
-import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 
 @RequiredArgsConstructor
-@Data
+@Getter
+@Setter
+@ToString
+@EqualsAndHashCode
 public class Team {
 
     @NonNull private String name;

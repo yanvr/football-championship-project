@@ -1,17 +1,17 @@
 package com.letscode.jogos.utils;
 
-import com.letscode.jogos.model.Game;
-
+import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class DateTimeFormatter2 {
 
-    public static String forString(Game game) {
+    public static String forString(LocalDate date) {
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/yy");
-        return dateTimeFormatter.format(game.getGameDate());
+        return dateTimeFormatter.format(date);
     }
 
-    public static DateTimeFormatter toString(String date) {
-        return DateTimeFormatter.ofPattern("dd/MM/yy");
+    public static LocalDate ofString(String date) {
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        return LocalDate.parse(date, dateTimeFormatter);
     }
 }
