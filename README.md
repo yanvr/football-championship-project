@@ -6,7 +6,7 @@ This application was made for a challenge of Santander Coders Web FullStack Degr
 
 ## Setting the Environment :gear:
 
--Clone this repo
+-Clone this repo.
 
 -Open the Core class, in the service package, locate the inputFile String and change the directory path for where the brasileirao2020.csv file is. It will be located in the files directory path, from the cloned repo.
 
@@ -33,4 +33,3 @@ Run  the Application Class.
     <br>
     <span>Yan Matheus </span><a href="https://github.com/yanvr"><img alt="github-icon" height="35" width="35" src="https://github.com/devicons/devicon/blob/master/icons/github/github-original.svg"></a>
 </div>
-
