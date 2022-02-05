@@ -3,8 +3,11 @@ package com.letscode.jogos.service;
 import com.google.common.base.Splitter;
 import com.letscode.jogos.model.Game;
 import com.letscode.jogos.model.Team;
+import org.apache.commons.io.FileUtils;
 
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 import static com.letscode.jogos.utils.DateTimeFormatter2.forString;
@@ -15,11 +18,10 @@ public class FileHandler {
     public static Set<Game> read(File file) {
         Set<Game> games = new TreeSet<>();
 
-        try (FileReader fileReader = new FileReader(file);
-             BufferedReader bufferedReader = new BufferedReader(fileReader)) {
-
-            while (bufferedReader.ready()) {
-                String fileLine = bufferedReader.readLine();
+        try {
+            List<String> fileLines = FileUtils.readLines(file, StandardCharsets.UTF_8);
+            fileLines.remove(0);
+            fileLines.forEach(fileLine -> {
                 List<String> datas = Splitter.on(";")
                         .omitEmptyStrings()
                         .trimResults()
@@ -34,7 +36,7 @@ public class FileHandler {
                         .build();
 
                 games.add(game);
-            }
+            });
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -42,7 +44,7 @@ public class FileHandler {
     }
 
     private File createFile(String fileName) {
-        String dirName = "C:\\Users\\yanvr\\Desktop\\java-projects\\projeto-jogos\\src\\main\\java\\com\\letscode\\jogos\\files\\";
+        String dirName = "C:\\Users\\yanvr\\Desktop\\java-projects\\projeto-jogos\\src\\main\\resources\\";
         File file = new File(dirName + fileName);
 
         try {
@@ -59,7 +61,6 @@ public class FileHandler {
     }
 
     public void writeTeamGames(Map<String, List<Game>> gamesByTeam) {
-
         List<Team> teams = new ArrayList<>();
 
         gamesByTeam.forEach((teamName, games) -> {
@@ -68,11 +69,10 @@ public class FileHandler {
             Team team = new Team(teamName);
 
             games.forEach(game -> {
-                try (FileWriter fileWriter = new FileWriter(file, true);
-                     BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {
-                    bufferedWriter.write(forString(game.getGameDate()) + ":" + game.getHomeTeam()
-                            + " " + game.getHomeGoals() + " x " + game.getVisitorGoals() + " " + game.getVisitorTeam());
-                    bufferedWriter.newLine();
+                try {
+                    FileUtils.write(file, forString(game.getGameDate()) + ":" + game.getHomeTeam()
+                            + " " + game.getHomeGoals() + " x " + game.getVisitorGoals() + " " + game.getVisitorTeam()
+                            + "\n", StandardCharsets.UTF_8, true);
 
                     game.addHomeTeamScore(team);
 
@@ -93,12 +93,9 @@ public class FileHandler {
         File file = createFile("league-table.csv");
 
         teams.forEach(team -> {
-            try (FileWriter fileWriter = new FileWriter(file, true);
-                 BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {
-
-                bufferedWriter.write(team.getName() + ";" + team.getWins() + ";" + team.getDraws() + ";"
-                        + team.getLoses() + ";" + team.getScore());
-                bufferedWriter.newLine();
+            try {
+                FileUtils.write(file, team.getName() + ";" + team.getWins() + ";" + team.getDraws() + ";"
+                        + team.getLoses() + ";" + team.getScore() + "\n", StandardCharsets.UTF_8, true);
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -109,19 +106,15 @@ public class FileHandler {
     private void writeFileHeader(File file) {
         if (file.getName().endsWith(".txt")) {
             String teamName = file.getName().replace(".txt", "").toUpperCase(Locale.ROOT);
-            try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file))
-            ) {
-                bufferedWriter.write("######### " + teamName + " ##########");
-                bufferedWriter.newLine();
 
+            try {
+                FileUtils.write(file, "######### " + teamName + " ##########\n", StandardCharsets.UTF_8, true);
             } catch (IOException e) {
                 e.printStackTrace();
             }
         } else {
-            try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file))) {
-                bufferedWriter.write("Time;Vitorias;Empates;Derrotas;Pontos");
-                bufferedWriter.newLine();
-
+            try {
+                FileUtils.write(file, "Time;Vitorias;Empates;Derrotas;Pontos\n", StandardCharsets.UTF_8, true);
             } catch (IOException e) {
                 e.printStackTrace();
             }

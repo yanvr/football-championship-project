@@ -12,8 +12,7 @@ public class Core {
 
     public static void run() {
 
-        String inputFile = "C:\\Users\\yanvr\\Desktop\\java-projects\\projeto-jogos\\src\\main\\java\\com\\letscode\\" +
-                "jogos\\files\\brasileirao2020.csv";
+        String inputFile = "C:\\Users\\yanvr\\Desktop\\java-projects\\projeto-jogos\\src\\main\\resources\\brasileirao2020 (2).csv";
 
         File file = new File(inputFile);
 
@@ -23,7 +22,7 @@ public class Core {
                 .collect(Collectors.groupingBy(Game::getHomeTeam));
 
         FileHandler fileHandler = new FileHandler();
-//
+
         fileHandler.writeTeamGames(teamByGames);
 
     }
