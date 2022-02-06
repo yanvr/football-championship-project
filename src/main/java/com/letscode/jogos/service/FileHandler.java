@@ -1,6 +1,7 @@
 package com.letscode.jogos.service;
 
 import com.google.common.base.Splitter;
+import com.google.common.collect.Multimap;
 import com.letscode.jogos.model.Game;
 import com.letscode.jogos.model.Team;
 import org.apache.commons.io.FileUtils;
@@ -74,7 +75,7 @@ public class FileHandler {
                             + " " + game.getHomeGoals() + " x " + game.getVisitorGoals() + " " + game.getVisitorTeam()
                             + "\n", StandardCharsets.UTF_8, true);
 
-                    game.addHomeTeamScore(team);
+                    game.isHomeOrVisitor(team);
 
                 } catch (IOException e) {
                     e.printStackTrace();
