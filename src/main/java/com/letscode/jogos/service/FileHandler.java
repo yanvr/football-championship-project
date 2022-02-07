@@ -1,7 +1,6 @@
 package com.letscode.jogos.service;
 
 import com.google.common.base.Splitter;
-import com.google.common.collect.Multimap;
 import com.letscode.jogos.model.Game;
 import com.letscode.jogos.model.Team;
 import org.apache.commons.io.FileUtils;
@@ -17,7 +16,10 @@ import static com.letscode.jogos.utils.DateTimeFormatter2.ofString;
 public class FileHandler {
 
     public static Set<Game> read(File file) {
-        Set<Game> games = new TreeSet<>();
+        Set<Game> games = new TreeSet<>(Comparator
+                .comparing(Game::getGameDate)
+                .thenComparing(Game::getHomeTeam)
+                .thenComparing(Game::getVisitorTeam));
 
         try {
             List<String> fileLines = FileUtils.readLines(file, StandardCharsets.UTF_8);

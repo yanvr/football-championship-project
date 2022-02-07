@@ -11,7 +11,7 @@ public class Core {
 
     public static void run() {
 
-        String inputFile = "C:\\Users\\yanvr\\Desktop\\java-projects\\projeto-jogos\\src\\main\\resources\\brasileirao2020 (2).csv";
+        String inputFile = "C:\\Users\\yanvr\\Desktop\\java-projects\\projeto-jogos\\src\\main\\resources\\santander811matchesResult.csv";
 
         File file = new File(inputFile);
 

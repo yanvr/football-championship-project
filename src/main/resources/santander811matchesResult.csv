@@ -1,0 +1,386 @@
+time_1(mandante);time2(visitante);placar_time_1;placar_time_2;data
+América-MG;Athletico Paranaense;4;4;2022-03-25
+América-MG;Atlético-GO;2;2;2022-03-20
+América-MG;Atlético-MG;0;3;2022-03-18
+América-MG;Avaí;0;5;2022-03-25
+América-MG;Botafogo;3;1;2022-03-04
+América-MG;Bragantino;0;0;2022-03-24
+América-MG;Ceará;6;6;2022-03-08
+América-MG;Ceará;6;6;2022-03-08
+América-MG;Corinthians;5;0;2022-03-28
+América-MG;Coritiba;5;1;2022-03-01
+América-MG;Cuiabá;1;6;2022-03-11
+América-MG;Flamengo;2;6;2022-03-14
+América-MG;Flamengo;2;6;2022-03-14
+América-MG;Fluminense;2;1;2022-03-05
+América-MG;Fortaleza;2;4;2022-03-09
+América-MG;Goiás;3;2;2022-03-14
+América-MG;Internacional;5;1;2022-03-19
+América-MG;Juventude;5;1;2022-03-05
+América-MG;Palmeiras;4;4;2022-03-13
+América-MG;Santos;2;5;2022-03-13
+América-MG;São Paulo;1;5;2022-03-09
+Athletico Paranaense;Atlético-GO;5;0;2022-03-17
+Athletico Paranaense;Atlético-MG;6;6;2022-03-26
+Athletico Paranaense;Avaí;2;6;2022-03-03
+Athletico Paranaense;Botafogo;3;4;2022-03-20
+Athletico Paranaense;Bragantino;6;2;2022-03-11
+Athletico Paranaense;Ceará;0;6;2022-03-28
+Athletico Paranaense;Corinthians;6;6;2022-03-27
+Athletico Paranaense;Coritiba;2;6;2022-03-14
+Athletico Paranaense;Cuiabá;2;5;2022-03-08
+Athletico Paranaense;Flamengo;5;1;2022-03-18
+Athletico Paranaense;Fluminense;1;2;2022-03-28
+Athletico Paranaense;Fortaleza;4;5;2022-03-30
+Athletico Paranaense;Goiás;1;5;2022-03-26
+Athletico Paranaense;Internacional;3;6;2022-03-22
+Athletico Paranaense;Juventude;6;2;2022-03-19
+Athletico Paranaense;Palmeiras;1;1;2022-03-05
+Athletico Paranaense;Santos;6;0;2022-03-29
+Athletico Paranaense;São Paulo;1;5;2022-03-27
+Atlético-GO;Atlético-MG;4;1;2022-03-05
+Atlético-GO;Avaí;1;2;2022-03-23
+Atlético-GO;Botafogo;1;4;2022-03-24
+Atlético-GO;Bragantino;2;1;2022-03-21
+Atlético-GO;Ceará;5;6;2022-03-18
+Atlético-GO;Corinthians;5;1;2022-03-21
+Atlético-GO;Coritiba;2;3;2022-03-16
+Atlético-GO;Cuiabá;3;4;2022-03-22
+Atlético-GO;Flamengo;1;4;2022-03-31
+Atlético-GO;Fluminense;4;4;2022-03-21
+Atlético-GO;Fortaleza;5;5;2022-03-22
+Atlético-GO;Goiás;5;1;2022-03-03
+Atlético-GO;Internacional;3;6;2022-03-16
+Atlético-GO;Juventude;0;6;2022-03-30
+Atlético-GO;Palmeiras;3;1;2022-03-09
+Atlético-GO;Santos;0;6;2022-03-23
+Atlético-GO;São Paulo;1;6;2022-03-02
+Atlético-MG;Avaí;0;5;2022-03-02
+Atlético-MG;Botafogo;3;3;2022-03-02
+Atlético-MG;Bragantino;0;6;2022-03-13
+Atlético-MG;Ceará;3;4;2022-03-11
+Atlético-MG;Corinthians;1;2;2022-03-30
+Atlético-MG;Coritiba;5;2;2022-03-17
+Atlético-MG;Cuiabá;5;2;2022-03-17
+Atlético-MG;Flamengo;4;1;2022-03-17
+Atlético-MG;Fluminense;5;2;2022-03-10
+Atlético-MG;Fortaleza;3;3;2022-03-28
+Atlético-MG;Goiás;0;3;2022-03-07
+Atlético-MG;Internacional;4;2;2022-03-19
+Atlético-MG;Juventude;1;1;2022-03-20
+Atlético-MG;Palmeiras;0;1;2022-03-12
+Atlético-MG;Santos;0;4;2022-03-02
+Atlético-MG;São Paulo;0;6;2022-03-16
+Avaí;Botafogo;5;1;2022-03-25
+Avaí;Bragantino;2;2;2022-03-08
+Avaí;Ceará;2;6;2022-03-04
+Avaí;Corinthians;1;6;2022-03-23
+Avaí;Coritiba;3;1;2022-03-23
+Avaí;Cuiabá;6;5;2022-03-13
+Avaí;Flamengo;0;5;2022-03-30
+Avaí;Fluminense;0;2;2022-03-28
+Avaí;Fortaleza;3;6;2022-03-07
+Avaí;Goiás;1;6;2022-03-16
+Avaí;Internacional;5;0;2022-03-10
+Avaí;Juventude;3;5;2022-03-27
+Avaí;Palmeiras;3;3;2022-03-08
+Avaí;Santos;6;0;2022-03-18
+Avaí;São Paulo;2;2;2022-03-13
+Botafogo;Bragantino;1;3;2022-03-03
+Botafogo;Ceará;0;2;2022-03-15
+Botafogo;Corinthians;3;3;2022-03-10
+Botafogo;Coritiba;5;2;2022-03-09
+Botafogo;Cuiabá;1;3;2022-03-16
+Botafogo;Flamengo;5;1;2022-03-25
+Botafogo;Fluminense;2;1;2022-03-20
+Botafogo;Fortaleza;4;6;2022-03-13
+Botafogo;Goiás;1;6;2022-03-03
+Botafogo;Internacional;3;3;2022-03-14
+Botafogo;Juventude;2;2;2022-03-27
+Botafogo;Palmeiras;0;0;2022-03-28
+Botafogo;Santos;3;6;2022-03-16
+Botafogo;São Paulo;2;3;2022-03-28
+Bragantino;Ceará;6;2;2022-03-28
+Bragantino;Corinthians;6;3;2022-03-08
+Bragantino;Coritiba;6;2;2022-03-17
+Bragantino;Cuiabá;0;5;2022-03-11
+Bragantino;Flamengo;6;0;2022-03-01
+Bragantino;Fluminense;3;0;2022-03-22
+Bragantino;Fortaleza;6;0;2022-03-15
+Bragantino;Goiás;1;0;2022-03-07
+Bragantino;Internacional;4;3;2022-03-20
+Bragantino;Juventude;4;3;2022-03-31
+Bragantino;Palmeiras;1;4;2022-03-22
+Bragantino;Santos;5;2;2022-03-01
+Bragantino;São Paulo;3;0;2022-03-07
+Ceará;Corinthians;5;3;2022-03-06
+Ceará;Coritiba;5;4;2022-03-16
+Ceará;Cuiabá;3;2;2022-03-03
+Ceará;Flamengo;3;4;2022-03-24
+Ceará;Fluminense;1;2;2022-03-14
+Ceará;Fortaleza;1;0;2022-03-21
+Ceará;Goiás;5;4;2022-03-17
+Ceará;Internacional;4;1;2022-03-02
+Ceará;Juventude;0;2;2022-03-05
+Ceará;Palmeiras;0;1;2022-03-04
+Ceará;Santos;2;6;2022-03-23
+Ceará;São Paulo;1;0;2022-03-02
+Corinthians;Coritiba;4;2;2022-03-11
+Corinthians;Cuiabá;5;0;2022-03-13
+Corinthians;Flamengo;5;3;2022-03-31
+Corinthians;Fluminense;3;2;2022-03-22
+Corinthians;Fortaleza;5;3;2022-03-26
+Corinthians;Goiás;2;0;2022-03-15
+Corinthians;Internacional;1;1;2022-03-20
+Corinthians;Juventude;2;5;2022-03-12
+Corinthians;Palmeiras;2;3;2022-03-27
+Corinthians;Santos;4;0;2022-03-28
+Corinthians;São Paulo;2;5;2022-03-11
+Coritiba;Cuiabá;0;1;2022-03-27
+Coritiba;Flamengo;3;0;2022-03-17
+Coritiba;Fluminense;1;6;2022-03-18
+Coritiba;Fortaleza;2;6;2022-03-09
+Coritiba;Goiás;2;3;2022-03-20
+Coritiba;Internacional;3;1;2022-03-18
+Coritiba;Juventude;4;1;2022-03-29
+Coritiba;Palmeiras;3;1;2022-03-20
+Coritiba;Santos;2;3;2022-03-07
+Coritiba;São Paulo;1;2;2022-03-05
+Cuiabá;Flamengo;4;4;2022-03-24
+Cuiabá;Fluminense;5;5;2022-03-09
+Cuiabá;Fortaleza;2;5;2022-03-01
+Cuiabá;Goiás;0;3;2022-03-05
+Cuiabá;Internacional;5;4;2022-03-26
+Cuiabá;Juventude;6;2;2022-03-26
+Cuiabá;Palmeiras;4;3;2022-03-16
+Cuiabá;Santos;6;2;2022-03-08
+Cuiabá;São Paulo;2;1;2022-03-07
+Flamengo;Fluminense;1;4;2022-03-01
+Flamengo;Fortaleza;3;2;2022-03-20
+Flamengo;Goiás;6;3;2022-03-17
+Flamengo;Internacional;4;0;2022-03-09
+Flamengo;Juventude;0;1;2022-03-17
+Flamengo;Palmeiras;4;5;2022-03-04
+Flamengo;Santos;2;5;2022-03-02
+Flamengo;São Paulo;6;2;2022-03-20
+Fluminense;Fortaleza;5;4;2022-03-30
+Fluminense;Goiás;6;5;2022-03-12
+Fluminense;Internacional;3;3;2022-03-04
+Fluminense;Juventude;1;1;2022-03-26
+Fluminense;Palmeiras;3;1;2022-03-13
+Fluminense;Santos;4;2;2022-03-24
+Fluminense;São Paulo;2;0;2022-03-16
+Fortaleza;Goiás;2;3;2022-03-18
+Fortaleza;Internacional;5;0;2022-03-04
+Fortaleza;Juventude;4;6;2022-03-24
+Fortaleza;Palmeiras;4;2;2022-03-19
+Fortaleza;Santos;2;5;2022-03-26
+Fortaleza;São Paulo;6;0;2022-03-03
+Goiás;Internacional;4;3;2022-03-21
+Goiás;Juventude;2;6;2022-03-17
+Goiás;Palmeiras;0;1;2022-03-31
+Goiás;Santos;0;3;2022-03-03
+Goiás;São Paulo;1;1;2022-03-09
+Internacional;Juventude;3;3;2022-03-16
+Internacional;Palmeiras;4;3;2022-03-16
+Internacional;Santos;0;6;2022-03-17
+Internacional;São Paulo;6;1;2022-03-29
+Juventude;Palmeiras;2;6;2022-03-15
+Juventude;Santos;3;1;2022-03-01
+Juventude;São Paulo;3;5;2022-03-22
+Palmeiras;Santos;4;4;2022-03-13
+Palmeiras;São Paulo;2;4;2022-03-26
+Santos;São Paulo;2;6;2022-03-19
+Athletico Paranaense;América-MG;4;0;2022-03-04
+Atlético-GO;América-MG;0;5;2022-03-19
+Atlético-GO;Athletico Paranaense;3;3;2022-03-29
+Atlético-MG;América-MG;0;6;2022-03-17
+Atlético-MG;Athletico Paranaense;5;2;2022-03-26
+Atlético-MG;Atlético-GO;6;1;2022-03-04
+Avaí;América-MG;4;3;2022-03-24
+Avaí;Athletico Paranaense;2;4;2022-03-03
+Avaí;Atlético-GO;3;5;2022-03-21
+Avaí;Atlético-MG;3;6;2022-03-31
+Botafogo;América-MG;3;4;2022-03-02
+Botafogo;Athletico Paranaense;1;0;2022-03-19
+Botafogo;Atlético-GO;5;4;2022-03-19
+Botafogo;Atlético-MG;6;4;2022-03-08
+Botafogo;Avaí;2;4;2022-03-14
+Bragantino;América-MG;2;6;2022-03-24
+Bragantino;Athletico Paranaense;4;0;2022-03-17
+Bragantino;Atlético-GO;0;2;2022-03-27
+Bragantino;Atlético-MG;5;2;2022-03-14
+Bragantino;Avaí;4;5;2022-03-11
+Bragantino;Botafogo;1;1;2022-03-08
+Ceará;América-MG;3;4;2022-03-25
+Ceará;Athletico Paranaense;5;4;2022-03-16
+Ceará;Atlético-GO;5;3;2022-03-03
+Ceará;Atlético-MG;1;4;2022-03-17
+Ceará;Avaí;3;0;2022-03-01
+Ceará;Botafogo;0;5;2022-03-30
+Ceará;Bragantino;2;4;2022-03-15
+Corinthians;América-MG;0;1;2022-03-29
+Corinthians;Athletico Paranaense;4;3;2022-03-05
+Corinthians;Atlético-GO;4;4;2022-03-12
+Corinthians;Atlético-MG;4;4;2022-03-25
+Corinthians;Avaí;1;6;2022-03-02
+Corinthians;Botafogo;5;4;2022-03-22
+Corinthians;Bragantino;1;2;2022-03-19
+Corinthians;Ceará;3;0;2022-03-04
+Coritiba;América-MG;1;1;2022-03-03
+Coritiba;Athletico Paranaense;6;2;2022-03-02
+Coritiba;Atlético-GO;1;4;2022-03-25
+Coritiba;Atlético-MG;2;5;2022-03-07
+Coritiba;Avaí;1;4;2022-03-11
+Coritiba;Botafogo;6;4;2022-03-24
+Coritiba;Bragantino;6;6;2022-03-13
+Coritiba;Ceará;6;2;2022-03-22
+Coritiba;Corinthians;2;3;2022-03-08
+Cuiabá;América-MG;2;1;2022-03-22
+Cuiabá;Athletico Paranaense;6;5;2022-03-12
+Cuiabá;Atlético-GO;1;6;2022-03-09
+Cuiabá;Atlético-MG;5;3;2022-03-21
+Cuiabá;Avaí;0;3;2022-03-06
+Cuiabá;Botafogo;4;6;2022-03-15
+Cuiabá;Bragantino;0;0;2022-03-15
+Cuiabá;Ceará;0;4;2022-03-28
+Cuiabá;Corinthians;1;3;2022-03-13
+Cuiabá;Coritiba;3;2;2022-03-14
+Flamengo;América-MG;2;5;2022-03-21
+Flamengo;Athletico Paranaense;3;5;2022-03-04
+Flamengo;Atlético-GO;2;5;2022-03-03
+Flamengo;Atlético-MG;3;4;2022-03-26
+Flamengo;Avaí;5;1;2022-03-05
+Flamengo;Botafogo;5;2;2022-03-08
+Flamengo;Bragantino;4;2;2022-03-19
+Flamengo;Ceará;0;4;2022-03-27
+Flamengo;Corinthians;4;0;2022-03-31
+Flamengo;Coritiba;2;4;2022-03-14
+Flamengo;Cuiabá;0;5;2022-03-17
+Fluminense;América-MG;2;3;2022-03-26
+Fluminense;Athletico Paranaense;6;0;2022-03-11
+Fluminense;Atlético-GO;1;4;2022-03-02
+Fluminense;Atlético-MG;5;2;2022-03-22
+Fluminense;Avaí;4;0;2022-03-11
+Fluminense;Botafogo;1;1;2022-03-10
+Fluminense;Bragantino;1;2;2022-03-05
+Fluminense;Ceará;2;2;2022-03-18
+Fluminense;Corinthians;4;3;2022-03-05
+Fluminense;Coritiba;1;6;2022-03-15
+Fluminense;Cuiabá;3;0;2022-03-08
+Fluminense;Flamengo;3;6;2022-03-15
+Fortaleza;América-MG;5;3;2022-03-16
+Fortaleza;Athletico Paranaense;3;0;2022-03-06
+Fortaleza;Atlético-GO;1;5;2022-03-06
+Fortaleza;Atlético-MG;6;0;2022-03-23
+Fortaleza;Avaí;3;2;2022-03-02
+Fortaleza;Botafogo;4;6;2022-03-06
+Fortaleza;Bragantino;1;3;2022-03-23
+Fortaleza;Ceará;0;4;2022-03-22
+Fortaleza;Corinthians;1;0;2022-03-11
+Fortaleza;Coritiba;0;0;2022-03-19
+Fortaleza;Cuiabá;3;0;2022-03-03
+Fortaleza;Flamengo;6;6;2022-03-13
+Fortaleza;Fluminense;2;4;2022-03-05
+Goiás;América-MG;4;4;2022-03-02
+Goiás;Athletico Paranaense;5;6;2022-03-09
+Goiás;Atlético-GO;4;6;2022-03-09
+Goiás;Atlético-MG;0;5;2022-03-25
+Goiás;Avaí;4;1;2022-03-10
+Goiás;Botafogo;2;2;2022-03-17
+Goiás;Bragantino;2;2;2022-03-21
+Goiás;Ceará;3;1;2022-03-26
+Goiás;Corinthians;5;3;2022-03-12
+Goiás;Coritiba;5;3;2022-03-18
+Goiás;Cuiabá;6;1;2022-03-03
+Goiás;Flamengo;1;2;2022-03-19
+Goiás;Fluminense;6;1;2022-03-06
+Goiás;Fortaleza;5;3;2022-03-27
+Internacional;América-MG;0;2;2022-03-20
+Internacional;Athletico Paranaense;2;0;2022-03-27
+Internacional;Atlético-GO;4;2;2022-03-13
+Internacional;Atlético-MG;1;5;2022-03-05
+Internacional;Avaí;6;4;2022-03-09
+Internacional;Botafogo;6;4;2022-03-09
+Internacional;Bragantino;1;2;2022-03-12
+Internacional;Ceará;3;2;2022-03-07
+Internacional;Corinthians;3;6;2022-03-01
+Internacional;Coritiba;1;6;2022-03-10
+Internacional;Cuiabá;4;3;2022-03-06
+Internacional;Flamengo;3;0;2022-03-08
+Internacional;Fluminense;2;6;2022-03-10
+Internacional;Fortaleza;6;6;2022-03-14
+Internacional;Goiás;0;5;2022-03-05
+Juventude;América-MG;2;6;2022-03-07
+Juventude;Athletico Paranaense;6;5;2022-03-26
+Juventude;Atlético-GO;0;3;2022-03-05
+Juventude;Atlético-MG;3;2;2022-03-29
+Juventude;Avaí;0;5;2022-03-17
+Juventude;Botafogo;6;4;2022-03-19
+Juventude;Bragantino;2;0;2022-03-12
+Juventude;Ceará;4;2;2022-03-24
+Juventude;Corinthians;5;2;2022-03-03
+Juventude;Coritiba;4;1;2022-03-31
+Juventude;Cuiabá;6;6;2022-03-06
+Juventude;Flamengo;1;0;2022-03-27
+Juventude;Fluminense;2;4;2022-03-01
+Juventude;Fortaleza;0;6;2022-03-22
+Juventude;Goiás;4;3;2022-03-07
+Juventude;Internacional;2;6;2022-03-26
+Palmeiras;América-MG;0;3;2022-03-09
+Palmeiras;Athletico Paranaense;2;5;2022-03-22
+Palmeiras;Atlético-GO;3;1;2022-03-14
+Palmeiras;Atlético-MG;6;2;2022-03-04
+Palmeiras;Avaí;3;6;2022-03-16
+Palmeiras;Botafogo;4;0;2022-03-26
+Palmeiras;Bragantino;6;1;2022-03-26
+Palmeiras;Ceará;1;3;2022-03-24
+Palmeiras;Corinthians;5;3;2022-03-26
+Palmeiras;Coritiba;2;6;2022-03-14
+Palmeiras;Cuiabá;1;4;2022-03-02
+Palmeiras;Flamengo;3;3;2022-03-18
+Palmeiras;Fluminense;5;1;2022-03-10
+Palmeiras;Fortaleza;0;5;2022-03-27
+Palmeiras;Goiás;0;2;2022-03-18
+Palmeiras;Internacional;1;1;2022-03-05
+Palmeiras;Juventude;5;6;2022-03-04
+Santos;América-MG;4;1;2022-03-05
+Santos;Athletico Paranaense;4;0;2022-03-04
+Santos;Atlético-GO;2;3;2022-03-26
+Santos;Atlético-MG;5;1;2022-03-01
+Santos;Avaí;2;5;2022-03-11
+Santos;Botafogo;4;3;2022-03-07
+Santos;Bragantino;2;5;2022-03-07
+Santos;Ceará;6;4;2022-03-19
+Santos;Corinthians;0;6;2022-03-06
+Santos;Coritiba;4;6;2022-03-03
+Santos;Cuiabá;3;6;2022-03-09
+Santos;Flamengo;0;3;2022-03-10
+Santos;Fluminense;1;0;2022-03-30
+Santos;Fortaleza;1;4;2022-03-15
+Santos;Goiás;2;0;2022-03-10
+Santos;Internacional;6;2;2022-03-20
+Santos;Juventude;0;2;2022-03-08
+Santos;Palmeiras;1;6;2022-03-11
+São Paulo;América-MG;1;1;2022-03-08
+São Paulo;Athletico Paranaense;4;0;2022-03-02
+São Paulo;Atlético-GO;4;0;2022-03-15
+São Paulo;Atlético-MG;6;2;2022-03-05
+São Paulo;Avaí;6;5;2022-03-22
+São Paulo;Botafogo;0;4;2022-03-29
+São Paulo;Bragantino;6;1;2022-03-22
+São Paulo;Ceará;1;6;2022-03-29
+São Paulo;Corinthians;0;3;2022-03-06
+São Paulo;Coritiba;5;4;2022-03-03
+São Paulo;Cuiabá;2;2;2022-03-20
+São Paulo;Flamengo;1;4;2022-03-24
+São Paulo;Fluminense;1;4;2022-03-08
+São Paulo;Fortaleza;1;4;2022-03-11
+São Paulo;Goiás;5;6;2022-03-24
+São Paulo;Internacional;0;5;2022-03-04
+São Paulo;Juventude;6;5;2022-03-17
+São Paulo;Juventude;6;5;2022-03-17
+São Paulo;Palmeiras;5;4;2022-03-14
+São Paulo;Santos;3;6;2022-03-04
+São Paulo;Santos;3;6;2022-03-04
+São Paulo;Santos;3;6;2022-03-04

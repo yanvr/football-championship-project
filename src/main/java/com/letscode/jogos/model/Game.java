@@ -6,20 +6,21 @@ import lombok.Getter;
 import lombok.ToString;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 @Builder
 @Getter
-@EqualsAndHashCode
 @ToString
-public class Game implements Comparable<Game> {
+@EqualsAndHashCode
+public class Game  {
 
-    private final int win = 3;
-    private final int draw = 1;
     private String homeTeam;
     private String visitorTeam;
     private int homeGoals;
     private int visitorGoals;
     private LocalDate gameDate;
+    private final int win = 3;
+    private final int draw = 1;
 
     public void isHomeOrVisitor(Team team) {
         if (team.getName().equals(homeTeam)) {
@@ -28,7 +29,6 @@ public class Game implements Comparable<Game> {
             addVisitorScore(team);
         }
     }
-
 
     private void addHomeScore(Team team) {
         if (homeGoals > visitorGoals) {
@@ -52,15 +52,5 @@ public class Game implements Comparable<Game> {
             team.setDraws(team.getDraws() + 1);
             team.setScore(team.getScore() + draw);
         }
-    }
-
-    @Override
-    public int compareTo(Game game) {
-        int result = homeTeam.compareTo(game.homeTeam);
-
-        if (result == 0) {
-            result = gameDate.compareTo(game.getGameDate());
-        }
-        return result;
     }
 }
